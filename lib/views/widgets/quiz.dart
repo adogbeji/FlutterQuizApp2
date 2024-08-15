@@ -10,9 +10,16 @@ class Quiz extends StatefulWidget {
 class _QuizState extends State<Quiz> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text('Quiz Widget'),
+    return MaterialApp(
+      title: 'Quiz App',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+      ),
+      home: Scaffold(
+        body: Center(
+          child: Text('Quiz Widget'),
+        ),
       ),
     );
   }
