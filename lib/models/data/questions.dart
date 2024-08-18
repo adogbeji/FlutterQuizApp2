@@ -31,4 +31,28 @@ List<QuizQuestion> questions = [
     ],
     correctAnswer: 'Flutter',
   ),
+  QuizQuestion(
+    question: 'What is NatWest?',
+    answers: [
+      'Shop',
+      'Airline Company',
+      'Political Group',
+      'Bank',
+      'TV Show',
+      'Currency'
+    ],
+    correctAnswer: 'Bank',
+  ),
+  QuizQuestion(
+    question: 'What job is the most dangerous?',
+    answers: [
+      'Doctor',
+      'Accountant',
+      'Teacher',
+      'Soldier',
+      'Flight Attendant',
+      'Chef'
+    ],
+    correctAnswer: 'Soldier',
+  ),
 ];
