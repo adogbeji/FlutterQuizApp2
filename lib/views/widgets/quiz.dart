@@ -8,6 +8,15 @@ class Quiz extends StatefulWidget {
 }
 
 class _QuizState extends State<Quiz> {
+  List<String> selectedAnswers = [];  // Stores selected answers
+  var activeScreen = 'start-screen';
+
+  void _startQuiz() {
+    setState(() {
+      activeScreen = 'questions-screen';
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
