@@ -8,7 +8,9 @@ class StartScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [],
+      children: [
+        Image.asset('assets/images/quiz-logo.png'),
+      ],
     );
   }
 }
