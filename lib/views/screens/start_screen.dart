@@ -7,10 +7,21 @@ class StartScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Image.asset('assets/images/quiz-logo.png'),
-      ],
+    return Center(
+      child: Column(
+        // mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Image.asset('assets/images/quiz-logo.png', width: 240,),
+
+          SizedBox(height: 14,),
+
+          OutlinedButton(
+            onPressed: () {},
+            child: const Text('Start Quiz'),
+          ),
+        ],
+      ),
     );
   }
 }
