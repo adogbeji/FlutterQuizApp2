@@ -14,10 +14,10 @@ class StartScreen extends StatelessWidget {
         children: [
           Image.asset('assets/images/quiz-logo.png', width: 240,),
 
-          SizedBox(height: 14,),
+          const SizedBox(height: 14,),
 
           OutlinedButton(
-            onPressed: () {},
+            onPressed: onStartQuiz,
             child: const Text('Start Quiz'),
           ),
         ],
