@@ -23,10 +23,49 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
               fontWeight: FontWeight.w600,
             ),
           ),
-          
+
+          const SizedBox(height: 12,),
+
           ElevatedButton(
             onPressed: () {},
-            child: const Text('Answer 1'),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.black,
+            ),
+            child: const Text(
+              'Answer 1',
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.white,
+              ),
+            ),
+          ),
+
+          ElevatedButton(
+            onPressed: () {},
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.black,
+            ),
+            child: const Text(
+              'Answer 2',
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.white,
+              ),
+            ),
+          ),
+
+          ElevatedButton(
+            onPressed: () {},
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.black,
+            ),
+            child: const Text(
+              'Answer 3',
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.white,
+              ),
+            ),
           ),
         ],
       ),
