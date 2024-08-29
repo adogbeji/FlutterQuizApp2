@@ -40,47 +40,47 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
 
           const SizedBox(height: 12,),
 
-          ElevatedButton(
-            onPressed: () {},
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.black,
-            ),
-            child: const Text(
-              'Answer 1',
-              style: TextStyle(
-                fontSize: 16,
-                color: Colors.white,
-              ),
-            ),
-          ),
+          // ElevatedButton(
+          //   onPressed: () {},
+          //   style: ElevatedButton.styleFrom(
+          //     backgroundColor: Colors.black,
+          //   ),
+          //   child: const Text(
+          //     'Answer 1',
+          //     style: TextStyle(
+          //       fontSize: 16,
+          //       color: Colors.white,
+          //     ),
+          //   ),
+          // ),
 
-          ElevatedButton(
-            onPressed: () {},
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.black,
-            ),
-            child: const Text(
-              'Answer 2',
-              style: TextStyle(
-                fontSize: 16,
-                color: Colors.white,
-              ),
-            ),
-          ),
+          // ElevatedButton(
+          //   onPressed: () {},
+          //   style: ElevatedButton.styleFrom(
+          //     backgroundColor: Colors.black,
+          //   ),
+          //   child: const Text(
+          //     'Answer 2',
+          //     style: TextStyle(
+          //       fontSize: 16,
+          //       color: Colors.white,
+          //     ),
+          //   ),
+          // ),
 
-          ElevatedButton(
-            onPressed: () {},
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.black,
-            ),
-            child: const Text(
-              'Answer 3',
-              style: TextStyle(
-                fontSize: 16,
-                color: Colors.white,
-              ),
-            ),
-          ),
+          // ElevatedButton(
+          //   onPressed: () {},
+          //   style: ElevatedButton.styleFrom(
+          //     backgroundColor: Colors.black,
+          //   ),
+          //   child: const Text(
+          //     'Answer 3',
+          //     style: TextStyle(
+          //       fontSize: 16,
+          //       color: Colors.white,
+          //     ),
+          //   ),
+          // ),
         ],
       ),
     );
