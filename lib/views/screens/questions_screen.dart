@@ -45,7 +45,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
             return AnswerButton(answer: answer, onTap: () {
               return answerQuestion(answer);
             });
-          })
+          }),
 
           // ElevatedButton(
           //   onPressed: () {},
@@ -60,6 +60,27 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
           //     ),
           //   ),
           // ),
+
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              TextButton(
+                onPressed: () {},
+                child: const Text('Prev', style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                ),),
+              ),
+
+              TextButton(
+                onPressed: () {},
+                child: const Text('Next', style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                ),),
+              ),
+            ],
+          ),
         ],
       ),
     );
