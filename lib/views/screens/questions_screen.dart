@@ -22,6 +22,16 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
     });
   }
 
+  void changeQuestion(int a) {
+    if (a == 1) {
+      if (questionIndex < questions.length) {
+        setState(() {
+          questionIndex++;
+        });
+      }
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final currentQuestion = questions[questionIndex];
@@ -73,7 +83,9 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
               ),
 
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  changeQuestion(1);
+                },
                 child: const Text('Next', style: TextStyle(
                   fontSize: 16,
                   color: Colors.white,
