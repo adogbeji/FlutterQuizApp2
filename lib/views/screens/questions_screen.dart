@@ -24,9 +24,10 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
 
   void changeQuestion(int a) {
     if (a == 1) {
-      if (questionIndex < questions.length) {
+      if (questionIndex < questions.length && questionIndex != questions.length - 1) {
         setState(() {
           questionIndex++;
+          print(questionIndex);
         });
       }
     }
