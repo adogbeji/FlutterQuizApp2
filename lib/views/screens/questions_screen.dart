@@ -30,6 +30,15 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
           print(questionIndex);
         });
       }
+    } else if (a == 0) {
+      if (questionIndex > 0) {
+        setState(() {
+          questionIndex--;
+          print(questionIndex);
+        });
+      }
+    } else {
+      print('Invalid argument!');
     }
   }
 
@@ -76,7 +85,9 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  changeQuestion(0);
+                },
                 child: const Text('Prev', style: TextStyle(
                   fontSize: 16,
                   color: Colors.white,
