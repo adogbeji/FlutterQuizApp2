@@ -23,6 +23,12 @@ class ResultsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final summaryData = getSummaryData();
+    final totalNumberOfQuestions = questions.length;
+    final numberOfCorrectAnswers = summaryData.where((data) {
+      return data['chosen_answer'] == data['correct_answer'];
+    }).length;
+
     return const Scaffold(
       body: Center(
         child: Text('Results Screen'),
