@@ -29,9 +29,11 @@ class ResultsScreen extends StatelessWidget {
       return data['chosen_answer'] == data['correct_answer'];
     }).length;
 
-    return const Scaffold(
-      body: Center(
-        child: Text('Results Screen'),
+    return Center(
+      child: Column(
+        children: [
+          Text('You\'ve answered $numberOfCorrectAnswers out of $totalNumberOfQuestions questions correctly'),
+        ],
       ),
     );
   }
