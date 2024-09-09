@@ -10,7 +10,21 @@ class QuestionSummary extends StatelessWidget {
     return SizedBox(
       height: 300,
       child: Column(
-        children: [],
+        children: summaryData.map((data) {
+          return Row(
+            children: [
+              // Text((data['question_index'] as int) as String),
+              Text((data['question_index'] as int).toString(),),
+
+              Column(
+                children: [
+                  // Text(data['question'].toString(),),
+                  Text(data['question'] as String),
+                ],
+              ),
+            ]
+          );
+        }).toList(),
       ),
     );
   }
