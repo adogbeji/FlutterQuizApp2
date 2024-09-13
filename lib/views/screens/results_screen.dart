@@ -13,7 +13,7 @@ class ResultsScreen extends StatelessWidget {
 
     for (var x = 0; x < chosenAnswers.length; x++) {
       summary.add({
-        'question_index': 1,
+        'question_index': x + 1,
         'question': questions[x].question,
         'chosen_answer': chosenAnswers[x],
         'correct_answer': questions[x].correctAnswer,
@@ -34,7 +34,9 @@ class ResultsScreen extends StatelessWidget {
     return Center(
       child: Column(
         children: [
-          Text('You\'ve answered $numberOfCorrectAnswers out of $totalNumberOfQuestions questions correctly'),
+          Text('You\'ve answered $numberOfCorrectAnswers out of $totalNumberOfQuestions questions correctly', style: TextStyle(
+            fontSize: 16,
+          ),),
           QuestionSummary(summaryData),
         ],
       ),
