@@ -38,6 +38,10 @@ class ResultsScreen extends StatelessWidget {
             fontSize: 16,
           ),),
           QuestionSummary(summaryData),
+          ElevatedButton(
+            onPressed: () {},
+            child: const Text('Restart Quiz'),
+          ),
         ],
       ),
     );
